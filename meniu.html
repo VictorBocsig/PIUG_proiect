@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Cantina studenteasca</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            body {
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+            .cta-inner {
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+            .theme-toggle {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+            }
+            #toggleImage {
+                transition: transform 0.3s ease;
+                width: 30px;
+                height: 30px;
+            }
+            .menu-image {
+                width: 100%;
+                max-height: 400px;
+                object-fit: cover;
+                margin-bottom: 20px;
+            }
+            .day-menu {
+                margin-bottom: 30px;
+            }
+            .day-menu h3 {
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+                font-weight: bold;
+            }
+            .day-menu ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            .day-menu li {
+                font-size: 1.2rem;
+                margin-bottom: 8px;
+            }
+            .video-controls {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                gap: 10px;
+            }
+            .video-controls button {
+                padding: 10px 20px;
+                font-size: 1rem;
+                color: #fff;
+                background-color: #f1c40f; /* Culoare galben-aurie */
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+            .video-controls button:hover {
+                background-color: #f39c12; /* Nuanta mai inchisa de galben */
+                transform: scale(1.1); /* Efect de marire la hover */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                <span class="site-heading-upper text-primary mb-3">Universitatea Politehnica Imaginara</span>
+                <span class="site-heading-lower">Cantina studentească</span>
+            </h1>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Cantina studentească</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Acasa</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="meniu.html">Meniu</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="orar.html">Orar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <!-- Imaginea meniului -->
+                            <img src="assets/servire_mancare.jpg" alt="Restaurant Menu" class="menu-image" />
+                            <!-- Search Bar -->
+                            <div style="text-align: center; margin-top: 20px;">
+                                <input type="text" id="searchInput" placeholder="Caută un cuvânt..." style="padding: 8px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc;">
+                                <button id="searchBtn" style="padding: 8px 15px; font-size: 1rem; background-color: #f1c40f; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                                    Caută
+                                </button>
+                                <p id="searchResult" style="margin-top: 10px; font-size: 1.2rem; font-weight: bold;"></p>
+                            </div>
+                            <h2 class="section-heading mb-5">
+                                <span class="section-heading-upper">Meniu Restaurant</span>
+                                <span class="section-heading-lower">Luni - Vineri</span>
+                            </h2>
+                            <!-- Meniul zilelor -->
+                           <!-- Meniul zilelor -->
+                           <div class="day-menu">
+                            <h3>Luni - 25lei</h3>
+                            <ul>
+                                <li><strong>Felul 1:</strong> Supă de legume </li>
+                                <li><strong>Felul 2:</strong> Friptură de pui cu garnitură </li>
+                                <li><strong>Desert:</strong> Tort de ciocolată </li>
+                            </ul>
+                        </div>
+                        <div class="day-menu">
+                            <h3>Marți - 25lei</h3>
+                            <ul>
+                                <li><strong>Felul 1:</strong> Supă cremă de ciuperci </li>
+                                <li><strong>Felul 2:</strong> Friptură de vită cu piure de cartofi </li>
+                                <li><strong>Desert:</strong> Cheesecake cu fructe de pădure </li>
+                            </ul>
+                        </div>
+                        <div class="day-menu">
+                            <h3>Miercuri - 25lei</h3>
+                            <ul>
+                                <li><strong>Felul 1:</strong> Ciorbă de burtă</li>
+                                <li><strong>Felul 2:</strong> Paste carbonara </li>
+                                <li><strong>Desert:</strong> Clătite cu nutella</li>
+                            </ul>
+                        </div>
+                        <div class="day-menu">
+                            <h3>Joi - 25lei</h3>
+                            <ul>
+                                <li><strong>Felul 1:</strong> Salată de vinete</li>
+                                <li><strong>Felul 2:</strong> Pizza Margherita </li>
+                                <li><strong>Desert:</strong> Înghețată de vanilie</li>
+                            </ul>
+                        </div>
+                        <div class="day-menu">
+                            <h3>Vineri - 20lei</h3>
+                            <ul>
+                                <li><strong>Felul 1:</strong> Supă de roșii </li>
+                                <li><strong>Felul 2:</strong> Saramură de pește </li>
+                                <li><strong>Desert:</strong> Prăjitură cu mere </li>
+                            </ul>
+                        </div>
+                        <h4>Alergenii: ou, lactate, seminte.</h4>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="video-container" style="margin-top: 30px;">
+                        <video id="mainVideo" width="1300" controls style="max-width: 100%; border-radius: 10px;">
+                            <source src="assets/film-mancare.mp4" type="video/mp4">
+                            Browser-ul tău nu suportă elementul video.
+                        </video>
+                    </div>
+                    <div class="video-controls">
+                        <button id="upButton">Up</button>
+                        <button id="downButton">Down</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; Cantina Studentească</p></div>
+        </footer>
+        <!-- Toggle Theme Button -->
+        <button class="btn btn-secondary theme-toggle" id="toggleColorBtn">
+            <img id="toggleImage" src="assets/darkmode.png" alt="Toggle Icon">
+        </button>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const toggleColorBtn = document.getElementById('toggleColorBtn');
+                const toggleImage = document.getElementById('toggleImage');
+                const ctaInner = document.querySelector('.cta-inner');
+
+                let isDarkMode = false;
+
+                toggleColorBtn.addEventListener('click', () => {
+                    isDarkMode = !isDarkMode;
+
+                    if (isDarkMode) {
+                        document.body.classList.add('bg-dark', 'text-light');
+                        ctaInner.style.backgroundColor = 'black';
+                        ctaInner.style.color = 'white';
+                        toggleImage.src = 'assets/lightmode.png';
+                    } else {
+                        document.body.classList.remove('bg-dark', 'text-light');
+                        ctaInner.style.backgroundColor = 'white';
+                        ctaInner.style.color = 'black';
+                        toggleImage.src = 'assets/darkmode.png';
+                    }
+                });
+                // Video switch functionality
+                const mainVideo = document.getElementById('mainVideo');
+                const upButton = document.getElementById('upButton');
+                const downButton = document.getElementById('downButton');
+
+                const videos = [
+                    'assets/film-mancare.mp4', // Primul videoclip
+                    'assets/film-mancare2.mp4' // Al doilea videoclip
+                ];
+
+                let currentVideoIndex = 0;
+
+                downButton.addEventListener('click', () => {
+                    currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+                    mainVideo.src = videos[currentVideoIndex];
+                    mainVideo.play();
+                });
+
+                upButton.addEventListener('click', () => {
+                    currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
+                    mainVideo.src = videos[currentVideoIndex];
+                    mainVideo.play();
+                });
+                // Search functionality
+                document.getElementById('searchBtn').addEventListener('click', () => {
+                    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+                    const allText = document.body.innerText.toLowerCase();
+                    const searchResult = document.getElementById('searchResult');
+
+                    if (searchInput && allText.includes(searchInput)) {
+                        searchResult.textContent = 'DA';
+                        searchResult.style.color = 'green';
+                    } else {
+                        searchResult.textContent = 'NU';
+                        searchResult.style.color = 'red';
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

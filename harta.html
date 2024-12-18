@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harta</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border: 0;
+            max-width: 90%;
+            height: 450px;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #000; /* Text de culoare neagră */
+            background-color: #ffc107; /* Galben spre auriu */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: #e0a800; /* Auriu mai intens pe hover */
+            transform: scale(1.05); /* Mărire ușoară pe hover */
+        }
+
+        header h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+
+        .site-heading-upper {
+            font-size: 1.2rem;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .site-heading-lower {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="site-heading text-center text-faded">
+            <span class="site-heading-upper text-primary mb-3">Locația Noastră</span>
+            <span class="site-heading-lower">Harta</span>
+        </h1>
+    </header>
+
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.042504937041!2d21.23926087581734!3d45.750293814305145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455d885b066909%3A0xc780d0cf38c728f0!2sC%C4%83min%2014C%2C%20Strada%20Daliei%2C%20Timi%C8%99oara!5e0!3m2!1sro!2sro!4v1734372164867!5m2!1sro!2sro" 
+        width="1200" height="650" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <a href="index.html" class="back-button">Întoarce-te la pagina principala</a>
+</body>
+</html>
